@@ -103,9 +103,10 @@ export default {
       const now = moment(new Date());
       const end = moment(date);
       const duration = moment.duration(now.diff(end));
-      const left = duration.asHours();
+      // eslint-disable-next-line radix
+      const left = parseInt(duration.asHours().toFixed(0));
       // eslint-disable-next-line no-nested-ternary
-      const result = left === 0 ? 'Hace unos minutos...' : left === 1 ? `${left.toFixed(0)} Hora` : `${left.toFixed(0)} Horas`;
+      const result = left === 0 ? 'Hace un momento...' : left === 1 ? `${left.toFixed(0)} Hora` : `${left} Horas`;
       return result;
     },
     async onPostComment(event) {
