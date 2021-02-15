@@ -76,7 +76,6 @@ const actions = {
       classes: JSON.parse(localStorage.getItem('classes')),
       token: localStorage.getItem('token'),
     };
-    console.log(data);
     commit('RESTORE_DATA', data);
   },
   cleanApp({ commit }) {
