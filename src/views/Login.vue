@@ -1,7 +1,7 @@
 <template>
   <v-row justify="center" align="center" class="mt-12 pt-12">
-    <v-col cols="12" sm="8" md="6">
-      <v-card>
+    <v-col cols="12" class="d-flex justify-center">
+      <v-card max-width="450px">
         <v-card-title class="headline">
           <img class="logo-white" src="../assets/logoWhite.jpeg" alt="logoWhite">
         </v-card-title>
