@@ -1,7 +1,7 @@
 # app-postulation
 
 made by Andersson Quintero.
-An app for Talenty.
+An app for Talently.
 
 ## Project setup
 ```
